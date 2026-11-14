@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://0mubp1kt4of3"]
+
+[ext_resource type="Texture2D" uid="uid://bf61q1inq7lmq" path="res://WoodstockFlying.webp" id="1_i0k7x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gu8in"]
+radius = 69.00725
+
+[node name="Woodstock" type="Area2D" unique_id=1441567345 groups=["Woodstock"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=490823749]
+
+[node name="WoodstockFlying" type="Sprite2D" parent="." unique_id=285953251]
+position = Vector2(526, -150)
+texture = ExtResource("1_i0k7x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2011026420]
+position = Vector2(578, -164)
+shape = SubResource("CircleShape2D_gu8in")
